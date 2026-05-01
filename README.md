@@ -17,12 +17,7 @@
 
 > **Disclaimer:** This project is for **educational purposes only**. Use it responsibly and legally. Unauthorized attacks on networks are illegal in most countries. 🌐🔒
 
----
 
-![Profile Views](https://komarev.com/ghpvc/?username=aadesh0706&color=blue)  
-*Active since*: `September 2024`
-
-**Account From:** `September 2020`
 
 ---
 
@@ -138,5 +133,33 @@ This project is intended for **educational and ethical testing purposes** only. 
 ```
 ESP32, Evil Twin, WiFi Hacking, Deauthentication, Captive Portal, HTML, CSS, JavaScript, Cybersecurity, Ethical Hacking, ESP32 WiFi, IoT, WiFi Pentesting
 ```
+---
+## 🎓 MOHAMED SYLLA : NOTES FOR CSN150
+
+### 🛠️ Equipment Used
+* **Microcontroller**: ESP32-CAM (AI Thinker Module)
+* **Programmer**: FTDI USB-to-TTL Adapter (5V Setting)
+* **Setup**: Jumper wires for GPIO 0 to GND (Flashing Mode)
+
+### ⚙️ Tools Used
+* **Arduino IDE**: For compiling and uploading the `NetworkDeAuth.ino` sketch.
+* **GitHub**: For hosting this fork and documenting the lab.
+* **Serial Monitor**: Configured at 115200 baud to monitor captured data.
+
+### 👣 Steps I Followed:
+1. **Fork & Setup**: Forked the original repository and verified the ESP32-CAM board was installed in the Boards Manager.
+2. **SSID Modification**: Edited the code to broadcast a fake network name ("BCC_Student_Guest") to simulate a trusted campus router.
+3. **Firmware Flashing**: Put the board into flashing mode and uploaded using the "Huge APP" partition scheme.
+4. **Network Deployment**: Verified the "Evil Twin" was broadcasting successfully and triggered the captive portal on a test device.
+
+### ⚠️ Problems / Solutions:
+* **Problem**: The ESP32-CAM rebooted during client connection.  
+  * **Solution**: Used a direct USB port for better power stability.
+* **Problem**: Sketch was too large to upload.  
+  * **Solution**: Changed Partition Scheme to "Huge APP (3MB No OTA)".
+
+### 📊 Final Report:
+This project successfully demonstrated the mechanics of an "Evil Twin" attack. By spoofing a legitimate SSID and using DNS hijacking, I forced users to a fake login page. This highlights the vulnerability of open Wi-Fi and the need for stronger authentication like WPA3. As I prepare for my BS at **John Jay College**, this lab provides critical hands-on experience with Man-in-the-Middle (MITM) vulnerabilities.
+
 
 ---
